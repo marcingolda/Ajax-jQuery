@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/ajax.js"></script>
+<title>Formularz</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Skontaktuj się!</h1>
+
+		<form>
+			<div id="login" class="field">
+				login <input placeholder="Galahard">
+				<p class="err"></p>
+			</div>
+			<div id="name" class="field">
+				imię <input placeholder="Jan">
+				<p class="err"></p>
+			</div>
+			<div id="surname" class="field">
+				nazwisko <input type="text" placeholder="Kowalski">
+				<p class="err"></p>
+			</div>
+			<div id="email" class="field">
+				e-mail <input type="email" placeholder="jankowalski@mail.pl">
+				<p class="err"></p>
+			</div>
+		</form>
+		<button id="send" type="submit" onclick="sendToServlet()">Wyślij</button>
+	</div>
+
+</body>
+</html>
